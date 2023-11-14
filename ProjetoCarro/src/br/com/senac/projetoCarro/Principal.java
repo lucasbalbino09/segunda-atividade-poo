@@ -1,25 +1,10 @@
 package br.com.senac.projetoCarro;
-import java.util.Scanner;
+
 class Principal {
 
 	public static void main(String[] args) {
 		
-		/*
-		 Scanner stringScanner = new Scanner(System.in);
 		
-		 
-		 System.out.println("informe a marca: ");
-		 String marca = stringScanner.nextLine();
-		 
-		 System.out.println("informe o modelo do carro: ");
-		 String modelo = stringScanner.nextLine();
-		 
-		 System.out.println("informe a placa do carro: ");
-		 String placa = stringScanner.nextLine();
-		 
-		 System.out.println("informe a velocidade: ");
-		 float velocMax =  stringScanner.nextFloat(); 
-		  */
 
 		 Passeio passeio1 = new Passeio();
 		 passeio1.setMarca("Nissan");
@@ -40,7 +25,7 @@ class Principal {
 		 carga1.setTaxa(1084);
 		 
 		 System.out.println(passeio1);
-		 
+		 System.out.println(carga1);
 		 
 	}
 

@@ -1,8 +1,10 @@
 package br.com.senac.projetoCarro;
+import java.text.DecimalFormat;
 
 public final class Passeio extends Veiculo {
 	private int qtdPassageiros;
-
+	
+	DecimalFormat formato = new DecimalFormat("#.###"); 
 	public int getQtdPassageiros() {
 		return qtdPassageiros;
 	}
@@ -30,12 +32,12 @@ public final class Passeio extends Veiculo {
 				+ ", Modelo= " 
 				+ getModelo() 
 				+ ", Velocidade Maxima= " 
-				+ calcVel() 
+				+ formato.format(calcVel()) 
 				+ ", Potencia do Motor= " 
 				+ getPotencia() 
 				+ ", Qtd de Pistões= "
 				+ getQtdPist() 
-				+ "*******************";
+				+ " *******************";
 	}
 	
 	

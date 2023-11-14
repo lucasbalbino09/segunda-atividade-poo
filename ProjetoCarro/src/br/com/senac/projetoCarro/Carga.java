@@ -1,6 +1,9 @@
 package br.com.senac.projetoCarro;
+import java.text.DecimalFormat;
 
 public final class Carga extends Veiculo{
+
+	DecimalFormat formato = new DecimalFormat("#.###"); 
 
 	private int cargaMax;
 	private int taxa;
@@ -42,12 +45,12 @@ public final class Carga extends Veiculo{
 				+ ", Modelo= " 
 				+ getModelo() 
 				+ ", Velocidade Maxima= " 
-				+ calcVel() 
+				+ formato.format(calcVel()) 
 				+ ", Qtd de Pistões= "
 				+ getQtdPist() 
 				+ ", Potencia do Motor= " 
 				+ getPotencia() 
-				+ "*******************";
+				+ " *******************";
 	}
 	
 }

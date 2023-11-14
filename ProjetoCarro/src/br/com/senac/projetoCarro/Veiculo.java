@@ -1,6 +1,8 @@
 package br.com.senac.projetoCarro;
 
+
 public class Veiculo extends Motor {
+	
 	private String placa = "";
     private String marca = "";
     private String modelo = "";
@@ -8,6 +10,7 @@ public class Veiculo extends Motor {
     private float velocMax = 0;
     private int qtdRodas = 0;
 
+    
     public String getPlaca() {
         return placa;
     }
@@ -57,11 +60,12 @@ public class Veiculo extends Motor {
     }
     
     public float calcVel() {
-    	if (this instanceof Passeio) {
-    		return this.getVelocMax() * 1000; 
+    	if (this instanceof Passeio) {	
+    		
+    		return  this.getVelocMax() * 1000;
     	}
     	else if (this instanceof Carga) {
-    		return this.getVelocMax() * 100000; 
+    		return this.getVelocMax() * 100; 
     	}
     	else {
     		return this.getVelocMax();
@@ -81,28 +85,6 @@ public class Veiculo extends Motor {
 
     public Veiculo() {
 
-    }
-
-    @Override
-    public String toString() {
-        return "Veiculo{"
-                + "placa= "
-                + this.getPlaca()
-                + ", marca= "
-                + this.getMarca()
-                + ", modelo= "
-                + getModelo()
-                + ", cor= "
-                + getCor()
-                + ", velocMax= "
-                + this.getVelocMax()
-                + ", qtdRodas= "
-                + getQtdRodas()
-                + ", Quantidade de Rodas= "
-                + this.getQtdPist()
-                + ", potencia do carro= "
-                + this.getPotencia()
-                + '}';
     }
 
     
